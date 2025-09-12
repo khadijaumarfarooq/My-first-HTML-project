@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="n">
+<head>
+    <meta charset="UTF-8" />
+
+
+    <meta name="viewport" content="width=device-width,initial-scale=0.1">
+    <title>From Structure To Style</title>
+    <!-- CSS Styles -->
+    <style>
+        /* Reset Styles (sab jaghah se default margin/padding remove karne ke lye)*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* body ka basic style */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: white;
+            color:black ;
+        } 
+        /* Header ka design */
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        
+        }
+        /* Navigation bar ka design */
+        nav {
+            background: #333;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        /* Main container */
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        /* Har section (Home, About, Contact) ka design*/
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        /* Heading ka margin */
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+        /* Footer ka design */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+     <header>
+        <h1>From Structure to Style></h1>
+        <p>My FIrst HTML & CSS Project</p>
+     </header>
+     <!-- Navigation Menu -->
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <!-- Main Content Container -->
+       <div class="container">
+        <!-- Home Section -->
+         <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to my first styled website! This is where I am learning hoe to use HTML for structure and CSs for style. </p> 
+         </section>
+         <!-- About Section -->
+          <section id="about">
+            <h2>About</h2>
+            <p>This is called <strong>"From Structute to Style"</strong>.I created it to practice web development using HTML and CSS.</p>
+          </section>
+          <!-- Contact Section -->
+           <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at: <a href="mailto : nizammanikhadija@gmail.com">nizammanikhadija@gmail.com</a> </p>
+           </section>
+       </div>
+       <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 From Structure to Style. All rights reserved. </p>
+        </footer>
+</body>
+</html>
