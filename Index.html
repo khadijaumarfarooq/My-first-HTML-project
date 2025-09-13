@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Practice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .section {
+      display: flex;
+      border: 2px solid #333;
+      padding: 15px;
+      margin: 20px 0;
+      gap: 10px;
+      background: #f4f4f4;
+      flex-wrap: wrap; /* requirement */
+    }
+
+    /* First section → row */
+    .row-section {
+      flex-direction: row; /* default, but written for clarity */
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    /* Second section → column */
+    .column-section {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      height: 300px; /* to see vertical alignment clearly */
+    }
+
+    .box {
+      flex: 1;
+      min-width: 80px;
+      min-height: 80px;
+      background-color: lightblue;
+      border: 2px solid navy;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Flexbox Assignment</h1>
+
+  <h2>Section 1: Flex Row</h2>
+  <div class="section row-section">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+
+  <h2>Section 2: Flex Column</h2>
+  <div class="section column-section">
+    <div class="box">Box A</div>
+    <div class="box">Box B</div>
+    <div class="box">Box C</div>
+  </div>
+</body>
+</html>
